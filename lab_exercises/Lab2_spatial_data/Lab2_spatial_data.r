@@ -35,7 +35,7 @@ package_vec <- c( # vector of package names
 sapply(package_vec, install.load.package) # applying install/load function to each name in package vector
 
 ### Environmental Data Loading ----
-#' if you have NOT downloaded the spatial data for this exercise yet, then do so, by following this link: https://uio-my.sharepoint.com/:f:/g/personal/peterhor_uio_no/EjbrdH5bzjVLmWyz7JVVxhkB9vluk4RznDJbxmY54hKVsw?e=0luLHx
+#' if you have NOT downloaded the spatial data for this exercise yet, then do so, by following this link: https://uio-my.sharepoint.com/:u:/g/personal/peterhor_uio_no/EXZrawRTxcNNucTHKkUf-FIBqanCux8Vd_jGHW767Xd0KA?e=FYfsa0
 #' save the files and copy file path
 #' Set file path for data - modify path to files on your computer
 path <- "lab_data/RASTER" 
