@@ -9,7 +9,7 @@ package_vec <- c( # vector of package names
   "raster", # raster tools
   "rgdal",  # spatial data tools (geospatial data abstraction library)
   "fields", # color ramps (e.g. tim.colors)
-  "rnaturalearth" # for shapefile retrieval
+  "rnaturalearth", # for shapefile retrieval
   "rgbif",      # global biodiversity data (GBIF) tools
   "maps",       # Provides functions that let us plot the maps
   "mapdata",    # Contains the hi-resolution points that mark out the countries.require(maps)
