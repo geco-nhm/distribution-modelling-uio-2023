@@ -1,3 +1,7 @@
+## rgdal installation
+install.packages("remotes")
+remotes::install_github("https://github.com/cran/rgdal")
+
 # Installation and loading of pacakges in Labs 1 and 2
 install.load.package <- function(x) { # custom function that loads the desired package and automatically installs any non-installed packages
   if (!require(x, character.only = TRUE))
@@ -7,7 +11,7 @@ install.load.package <- function(x) { # custom function that loads the desired p
 package_vec <- c( # vector of package names
   "sp", # vector tools
   "raster", # raster tools
-  "rgdal",  # spatial data tools (geospatial data abstraction library)
+  # "rgdal",  # spatial data tools (geospatial data abstraction library)
   "fields", # color ramps (e.g. tim.colors)
   "rnaturalearth", # for shapefile retrieval
   "rgbif",      # global biodiversity data (GBIF) tools
