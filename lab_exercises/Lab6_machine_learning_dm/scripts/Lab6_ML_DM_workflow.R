@@ -52,7 +52,8 @@ set.seed(112)
 
 # Path to raster (.tif) files
 pred_path <- paste0(dirname(dirname(dirname(current_path))),
-                    "/lab_data/nor_predictor_rasters/2km")
+                    #"/lab_data/nor_predictor_rasters/2km")
+                    "/lab_data/RASTER/2km")
 
 # Store all paths to files ending in ".tif" in a vector
 raster_fnames = list.files(path = pred_path, pattern = "\\.tif$",
@@ -60,6 +61,9 @@ raster_fnames = list.files(path = pred_path, pattern = "\\.tif$",
 # Create a stack of all individual rasters
 pred_stack = raster::stack(raster_fnames)
 pred_stack
+
+names(pred_stack) <- gsub("_2km","",names(pred_stack))      # Rename: get rid of "_2km" (or "_10km"), to match variable names in training data
+
 
 # Plot DEM to test if everything works as expected
 raster::plot(pred_stack[["dem100"]])
@@ -137,7 +141,7 @@ summary(occ_ras)
 # presence_indices <- which(values(occ_ras)==1)
 ### Presences ###
 # Extract indices of raster matrix where species occurs
-presence_indices <- which(values(occ_ras)>=1)  # NOTE CONDITION CHANGED
+presence_indices <- which(values(occ_ras)>=1)
 
 ### Absences ###
 # Extract indices of raster matrix where species does not occur
@@ -180,7 +184,7 @@ print(paste0("Number of absences: ",
 raster::plot(norway_mask, 
              col = rgb(red = 0.9, green = 0.9, blue = 0.9, alpha=1))
 # Create a vector with colors based on pres/abs
-# --> presences in red, absences in blue
+# --> presences in blue, absences in red
 colors <- c(rgb(red = 1, green = 0, blue = 0, alpha = 0.2),
             rgb(red = 0, green = 0, blue = 1, alpha = 0.2))[training_data$presence+1]
 # Add points
