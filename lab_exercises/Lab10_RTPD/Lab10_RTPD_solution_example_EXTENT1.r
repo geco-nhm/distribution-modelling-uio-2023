@@ -1,6 +1,6 @@
 # BIOS 5211/9211
 # Olav Skarpaas, Eva Lieungh, Peter Horvath and Adam Naas,
-# NHM, University of Oslo, Nov 2021
+# NHM, University of Oslo, Nov 2021, with updates by Adam Naas, Nov 2023
 
 # Lab10. RTPD
 #############
@@ -14,7 +14,7 @@
 
 # Each person in the group works with a different species, and addresses
 # the following questions:
-# How does extent/resolution/density/clumping [ONE of these] affect
+# How does extent/resolution/density [ONE of these] affect
 # a. Observed response frequencies
 # b. Environmental variable covariation
 # c. Model structure (selected environmental variables) 

@@ -1,6 +1,6 @@
 # BIOS 5211/9211
 # Olav Skarpaas, Eva Lieungh, Peter Horvath and Adam Naas,
-# NHM, University of Oslo, Nov 2021
+# NHM, University of Oslo, Nov 2021, with updates by Adam Naas, Nov 2023
 
 # Lab10. RTPD
 #############
