@@ -114,7 +114,7 @@ plot(mpost$Beta) # you might need to make plot window bigger for this one
 #our sample size is the number of samples in all chains combined
 #but are all these samples independent? If they are correlated, we have less information than the number of samples would indicate
 #check effective sample size (ESS)
-effectiveSize(mpost$Beta) #sample size left, ESS right
+effectiveSize(mpost$Beta) #ESS for intercept left, slope right
 #Question! Is there evidence of autocorrelation? How does ESS compare with raw sample size in this Hmsc model? What could you do to improve the ESS?
 
 #To understand if the chains converged on similar values, we calculate the'potential scale reduction faction' (psrf)
